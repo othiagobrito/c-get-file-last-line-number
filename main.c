@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 void get_last_line_number(const char *filepath) {
     FILE *file = fopen(filepath, "rb");
 
@@ -26,9 +24,7 @@ void get_last_line_number(const char *filepath) {
 
         ch = fgetc(file);
 
-        if (ch == '\n') {
-            break;
-        }
+        if (ch == '\n') break;
         
         position--;
     }
