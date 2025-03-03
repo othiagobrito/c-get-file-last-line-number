@@ -32,8 +32,6 @@ void get_last_line_number(const char *filepath) {
     if (position > 0) {
         rewind(file);
 
-        line_number = 1;
-
         while ( (ch = fgetc(file)) != EOF ) {
             if ( ch == '\n' ) line_number++;
         }
